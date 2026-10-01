@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="REST API Automation Suite">
+
+<listeners>
+    <listener class-name="com.faisal.api.utils.TestListener"/>
+</listeners>
+
+    <test name="User API Regression Tests">
+        <classes>
+            <class name="com.faisal.api.tests.GetUserTest"/>
+            <class name="com.faisal.api.tests.CreateUserTest"/>
+            <class name="com.faisal.api.tests.UpdateUserTest"/>
+            <class name="com.faisal.api.tests.DeleteUserTest"/>
+        </classes>
+    </test>
+
+</suite>

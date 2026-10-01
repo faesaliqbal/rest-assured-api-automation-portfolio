@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "username": {
+      "type": "string",
+      "minLength": 1
+    },
+    "email": {
+      "type": "string",
+      "minLength": 1
+    },
+    "address": {
+      "required": [
+        "street",
+        "suite",
+        "city",
+        "zipcode",
+        "geo"
+      ],
+      "properties": {
+        "city": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geo": {
+          "required": [
+            "lat",
+            "lng"
+          ],
+          "properties": {
+            "lng": {
+              "pattern": "^-?[0-9]+(\\.[0-9]+)?$",
+              "type": "string"
+            },
+            "lat": {
+              "pattern": "^-?[0-9]+(\\.[0-9]+)?$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "zipcode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "suite": {
+          "type": "string",
+          "minLength": 1
+        },
+        "street": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "type": "object"
+    },
+    "phone": {
+      "type": "string",
+      "minLength": 1
+    },
+    "website": {
+      "type": "string",
+      "minLength": 1
+    },
+    "company": {
+      "required": [
+        "name",
+        "catchPhrase",
+        "bs"
+      ],
+      "properties": {
+        "bs": {
+          "type": "string",
+          "minLength": 1
+        },
+        "catchPhrase": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "username",
+    "email",
+    "address",
+    "phone",
+    "website",
+    "company"
+  ]
+}

@@ -1,0 +1,48 @@
+# Maven and generated reports
+target/
+test-output/
+surefire-reports/
+testng-results.xml
+testng-failed.xml
+*.class
+*.log
+*.dump
+*.dumpstream
+
+# IDE/editor and operating system
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+out/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+
+# Local configuration, credentials, and caches
+.env
+.env.*
+!.env.example
+*.local.properties
+settings.xml
+.m2/
+.venv/
+__pycache__/
+*.pyc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Existing empty files have no execution role
+.mvn/maven.config
+.mvn/jvm.config
