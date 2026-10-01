@@ -196,8 +196,8 @@ remain; check its timestamp.
 
 Latest verified local API suite: **9 passed, 0 failed, 0 errors, 0 skipped**,
 on **1 October 2026**. This is local execution evidence, **not a GitHub Actions
-result**. The current [workflow](.github/workflows/api-tests.yml) has not executed
-on GitHub.
+result**. Separately, the initial hosted [GitHub Actions validation](https://github.com/faesaliqbal/rest-assured-api-automation-portfolio/actions/runs/36896847216)
+completed successfully: **9 tests passed, 0 failed, 0 errors, and 0 skipped**.
 
 ## GitHub Actions
 
